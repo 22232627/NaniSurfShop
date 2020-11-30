@@ -1,0 +1,181 @@
+
+/*css Document*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* { margin: 0;
+	padding:0;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #FFFFFF; 
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;	
+}
+
+header {
+	text-decoration: none;
+	text-align: center;
+}
+
+
+main {
+	background-color: #9DC5BC;
+	margin-top: -10px;
+	height: 750px;
+}
+.logo img{
+	width: 6%;
+	float: center;
+	justify-content: center;
+	padding-top: 15PX;
+	padding-bottom: 5px;
+}
+
+.cuadro {
+	background-color: #9DC5BC;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: #FFFFFF;
+	width: 20%; 
+	height: 400px;
+	margin-top: 50px;
+	margin-left: 230px;
+	margin-bottom: -600px;
+}
+
+a { color: #FFFFFF;}
+
+nav {
+	text-align: center;
+	background-color: #DB806A;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul { 
+	display: flex; 
+	justify-content: center; 
+	list-style: none;
+}
+
+nav ul li a { 
+	color:#FFFFFF;
+	text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover { 
+	color:#000000; 
+	background-color: #F4BAAE; 
+}
+
+.home {
+	display: flex;
+	flex-flow: wrap
+}
+
+.home img { max-width: 20%;
+	display: flex;
+	flex-flow: wrap;
+	padding: 70px;
+	padding-left: 300px;
+	padding-top: 100px;
+}
+
+.home h1 {
+	display: flex;
+	padding: 20px;
+	font-size: 30px;
+	justify-content: center;
+	margin-left: 680px;
+	margin-top: -530px;
+	margin-right: 350px;
+}
+
+.home p {
+	color: #FFFFFF
+	padding: 20px;
+	font-size: 14px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	margin-left: 700px;
+	margin-top: 10px;
+	margin-right: 300px;
+}
+
+.landing img{
+	width: 40%;
+	padding-left: 400px;
+	padding-top: 60px;
+	justify-content: center;
+}
+
+
+
+.logof img{
+	width: 35px; 
+	padding-left:25px;
+	float: left;
+	justify-content: left;
+	margin-top: 3px;
+	padding-top: 1px;
+}
+
+.facebook img{
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: inline-block;
+	margin-top: 10px;
+	justify-content:center;
+	margin-left: 560px;
+}
+
+.twitter img {
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: block;
+	margin-top: -30px;
+	justify-content:center;
+	margin-left: 715px;
+}
+
+.instagram img {
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: block;
+	margin-top: -25px;
+	justify-content:center;
+	margin-left: 820px;
+}
+
+.nombre li  {
+	font-size: 10pt;
+	color: #9DC5BC;
+	padding-left: 1300px;
+	float: right;
+	justify-content: right;
+	margin-top: -30px;
+	text-decoration: none;
+    display: inline-block;
+}
+
+.nombre a { color: #9DC5BC ;}
+
+footer {
+	background-color: #FFFFFF;
+	height: 35px;
+	margin-top: 10px;
+	position: static;
+	display: inline-flex;	
+}
+
+
+
+	

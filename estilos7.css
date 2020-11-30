@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poiret+One&family=Roboto:wght@100&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #d9ede7;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 95%;
+	max-width: 1000px;
+	margin: 10px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header    header    header"
+						 "contenido contenido contenido"
+						 "footer    footer    footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	color: #db806a;
+	grid-area: header;
+	font-family: 'Fjalla One', sans-serif;	
+}
+.header h1 {
+	text-align: center;
+	padding-left: 20px;
+
+
+}
+.header h2 {
+	text-align: center;
+	padding-left: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.header p{
+	text-align: center;
+	font-size: 16px;
+	color: #DB806A;
+	padding-left: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+.header h3{
+	text-align: center;
+	padding-left: 20px;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.header h4{
+	text-align: center;
+	font-size: 16px;
+	color: #DB806A;
+	padding-left: 20px;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+}
+
+
+.contenedor .contenido {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	grid-area: contenido;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	padding: 30px
+
+}
+
+
+.contenido  h5{
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	color: #DB806A;
+	align-content: center;
+	justify-content: center;
+}
+
+.contenido img{
+	min-width: 50px ;
+	max-width: 50px;
+	
+
+}
+
+.contenido p{
+	font-size: 16px;
+	color: #DB806A;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;	
+
+}
+
+
+.contenedor .footer {
+	color:#db806a;
+    padding: 20px;
+    font-size: 16PX; 
+	font-family: 'Fjalla One', sans-serif;
+	grid-area: footer;
+
+}
+.footer h6{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 26px;
+	color: #DB806A;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+}
+.galeria {
+	padding-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.galeria div {
+	border: 3px solid #DB806A;
+	background-color: #DB806A;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 150px
+}
+.galeria p {
+	color: #FFFFFF;
+	padding: 8px;
+}
+.galeria div img {
+	width: 100PX;
+	height: 200px;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header    header    header"
+						     "contenido contenido contenido"
+						     "sidebar   sidebar   sidebar"
+						     "footer    footer    footer";
+	}
+}

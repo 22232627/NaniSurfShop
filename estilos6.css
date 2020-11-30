@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poiret+One&family=Roboto:wght@100&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #d9ede7;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 95%;
+	max-width: 1200px;
+	margin: 10px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header    header    header"
+						 "contenido sidebar sidebar"
+						 "footer    footer    footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	background: #fff;
+	color: #db806a;
+	text-align: right;
+	grid-area: header;
+	font-family: 'Fjalla One', sans-serif;
+	
+}
+.header img {
+	width: 50px;
+	padding-left: 20px;
+}
+
+
+.giros {
+	width: 1000px;
+	height: 42px;
+	line-height: 42px;
+	overflow: hidden;
+	color: #db806a;
+	font-size: 38px;
+}
+
+.giros ul {
+	list-style: none;
+	padding-left: 10px;
+	animation: cambiar 6s infinite;
+}
+
+@keyframes cambiar {
+	0%{ margin-top: 0;}
+	20%{margin-top: 0;}
+
+	25% {margin-top:  -40px;}
+	50% {margin-top: -40px;}
+
+	55% {margin-top: -80px;}
+	80% {margin-top: -80px;}
+
+	85% {margin-top: -40px;}
+	95% {margin-top: -40px;}
+}
+
+
+.contenedor .contenido {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	grid-area: contenido;
+	padding-left: 30PX;
+}
+.contenido h1{
+	color: #9dc5bc;
+	text-align: left;
+	font-size: 25PX;
+	grid-area: header;
+	font-family: 'Fjalla One', sans-serif;
+	padding-bottom:  10PX;
+	padding-top: 20PX;
+}
+
+.contenido h2{
+	color: #9dc5bc;
+	text-align: left;
+	font-size: 25PX;
+	grid-area: header;
+	font-family: 'Fjalla One', sans-serif;
+	padding-bottom:  20PX;
+	padding-top: 10PX;
+}
+
+.contenido h3{
+	color: #9dc5bc;
+	text-align: left;
+	font-size: 25PX;
+	grid-area: header;
+	font-family: 'Fjalla One', sans-serif;
+	padding-bottom:  20PX;
+}
+
+.contenido  form {
+	caption-side: 70px;
+	color: black;
+	font-size: 20px;
+	text-decoration: #db806a
+	padding:10px;
+}
+
+.btn-neon{
+	position: relative;
+	display: inline-block;
+	padding: 5px 10px;
+	color: #db806a;
+	letter-spacing: 4px;
+	font-size: 20px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.btn-neon:hover{
+	border-radius: 15px;
+	background: #9dc5bc;
+	color: #FFFFFF;
+	box-shadow: 0 0 10px #9dc5bc, 0 0 40px #9dc5bc, 0 0 80px #9dc5bc;
+	transition-delay: 0s;
+}
+
+.text{
+	background: #e9f4f0;
+	border-color: #FFFFFF;
+	width: 300px;
+	height: 30PX	
+}
+
+
+.texto{
+	background: #e9f4f0;
+	border-color: #FFFFFF;
+	width: 400px;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: #9dc5bc;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 560px;
+	grid-area: sidebar;
+	overflow: hidden;
+}
+
+
+.video{
+	width: 40%;
+	padding-left: 100px;
+}
+
+.contenedor .footer {
+	grid-area: footer;
+	font-family: 'Fjalla One', sans-serif;
+	display: flex; 
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.nombre {
+	padding-left: 10px;
+	display: flex;
+	justify-content:center;
+}
+ .nombre li a{
+ 	list-style: none;
+ 	color: #9dc5bc;
+ 	text-decoration: none;
+ 	 }
+
+
+.contacto {
+	caption-side: 50px;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: 10px;
+	justify-content: right;
+	color: #db806a;
+	font-size: 20px;
+}
+.contacto p{
+	align-items: right;
+}
+
+.footer img{
+	width: 20px;
+	float: center;
+	padding-left: 5px;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header    header    header"
+						     "contenido contenido contenido"
+						     "sidebar   sidebar   sidebar"
+						     "footer    footer    footer";
+	}
+}

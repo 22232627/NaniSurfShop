@@ -1,0 +1,273 @@
+/*css Document*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* { margin: 0;
+	padding:0;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #FFFFFF; 
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;	
+}
+
+header {
+	text-decoration: none;
+	text-align: center;
+}
+
+
+main {
+	background-color: #9DC5BC;
+	margin-top: -10px;
+	height: 1100px;
+}
+.logo img{
+	width: 6%;
+	float: center;
+	justify-content: center;
+	padding-top: 15PX;
+	padding-bottom: 5px;
+}
+
+.cuadro {
+	background-color: #9DC5BC;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: #FFFFFF;
+	width: 20%; 
+	height: 400px;
+	margin-top: 70px;
+	margin-left: 1000px;
+	margin-bottom: -500px;
+}
+
+a { color: #FFFFFF;}
+
+nav {
+	text-align: center;
+	background-color: #DB806A;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul { 
+	display: flex; 
+	justify-content: center; 
+	list-style: none;
+}
+
+nav ul li a { 
+	color:#FFFFFF;
+	text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover { 
+	color:#000000; 
+	background-color: #F4BAAE; 
+}
+
+.home {
+	display: flex;
+	flex-flow: wrap;
+	position: relative;
+}
+
+.foto1 img { max-width: 13%;
+	display: flex;
+	flex-flow: wrap;
+	padding: 2px;
+	padding-left: 755px;
+	padding-top: 100px;
+}
+
+.foto2 img { max-width: 9.8%;
+	display: flex;
+	flex-flow: wrap;
+	padding: 2px;
+	margin-left: 950px;
+	margin-top: -437px;
+	padding-top: 100px;
+
+}
+
+.foto3 img { max-width: 8.3%;
+	display: flex;
+	flex-flow: wrap;
+	padding: 2px;
+	margin-left: 1100px;
+	margin-top: -437px;
+	padding-top: 100px;
+
+}
+
+.home h1 {
+	display: flex;
+	padding: 20px;
+	font-size: 20px;
+	justify-content: center;
+	margin-left: -10px;
+	margin-top: -430px;
+}
+
+.home h2{
+	display: flex;
+	font-size: 30px;
+	justify-content: center;
+	margin-left: -1005px;
+	margin-top: 10px;
+}
+
+.home p {
+	color: #FFFFFF
+	padding: 20px;
+	font-size: 14px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	margin-left: 185px;
+	margin-top: 25px;
+	margin-right: 750px;
+}
+
+.home h3{
+	display: flex;
+	padding: 20px;
+	font-size: 20px;
+	justify-content: center;
+	margin-left: 0px;
+	margin-top: 160px;
+	position: relative;
+
+}
+
+.container{
+  margin: auto;
+  background-color: white;
+  height:  400px;
+  padding: 20px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 300px;
+  height: 310px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #DB806A;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  border-radius: 100%;
+}
+
+
+.logof img{
+	width: 35px; 
+	padding-left:25px;
+	float: left;
+	justify-content: left;
+	margin-top: 3px;
+	padding-top: 1px;
+	
+}
+
+.facebook img{
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: inline-block;
+	margin-top: 10px;
+	justify-content:center;
+	margin-left: 560px;
+}
+
+.twitter img {
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: block;
+	margin-top: -30px;
+	justify-content:center;
+	margin-left: 715px;
+}
+
+.instagram img {
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: block;
+	margin-top: -25px;
+	justify-content:center;
+	margin-left: 820px;
+}
+
+.nombre li {
+	font-size: 10pt;
+	color: #fff;
+	padding-left: 1300px;
+	float: right;
+	justify-content: right;
+	margin-top: -30px;
+}
+
+.nombre a { color: #9DC5BC ;}
+
+
+footer {
+	background-color: #FFFFFF;
+	height: 50px;
+	margin-top: 10px;
+	position: static;
+	display: inline-flex;	
+}

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* { margin: 0;
+	padding:0;
+	box-sizing: border-box
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #FFFFFF; 
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;	
+}
+
+header {
+	text-decoration: none;
+	text-align: center;
+}
+
+
+main {
+	background-color: #9DC5BC;
+	margin-top:-619px;
+	height: 650px;
+	display: flex;
+	flex-flow: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4%;
+	padding-left: 55% 
+}
+
+.foto1 img {
+	width: 29%;
+	padding-top: 3px;
+	margin-bottom: 30px;
+	margin-top: 60px;
+	margin-left: 290Px;
+
+}
+
+.logo img{
+	width: 6%;
+	float: center;
+	justify-content: center;
+	padding-top: 15PX;
+	padding-bottom: 5px;
+}
+
+a { color: #FFFFFF;}
+
+nav {
+	text-align: center;
+	background-color: #DB806A;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul { 
+	display: flex; 
+	justify-content: center; 
+	list-style: none;
+}
+
+nav ul li a { 
+	color:#FFFFFF;
+	text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover { 
+	color:#000000; 
+	background-color: #F4BAAE; 
+}
+
+.formulario h1 {
+	display: flex;
+	padding: 15%;
+	font-size: 20px;
+	justify-content: center;
+	margin-left: -400px;
+	margin-top: -430px;
+	color: #FFFFFF
+}
+
+.logof img{
+	width: 4%; 
+	padding-left:25px;
+	float: left;
+	justify-content: left;
+	margin-top: 3px;
+	padding-top: 1px;
+	
+}
+
+.facebook img{
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: inline-block;
+	margin-top: 10px;
+	justify-content:center;
+	margin-left: 560px;
+}
+
+.twitter img {
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: block;
+	margin-top: -30px;
+	justify-content:center;
+	margin-left: 715px;
+}
+
+.instagram img {
+	width: 25px; 
+	padding: 0;
+	float: center;
+	display: block;
+	margin-top: -25px;
+	justify-content:center;
+	margin-left: 820px;
+}
+
+.nombre li{
+	font-size: 10pt;
+	color: #FFFFFF;
+	padding-left: 1300px;
+	float: right;
+	justify-content: right;
+	margin-top: -30px;
+}
+
+.nombre a { color: #9DC5BC ;}
+
+footer {
+	background-color: #FFFFFF;
+	height: 50px;
+	margin-top: 10px;
+	position: static;
+	display: inline-flex;	
+}
